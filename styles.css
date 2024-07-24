@@ -55,6 +55,24 @@
   text-decoration: none;
   color: var(--first-bg-color);
 }
+.pricing {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+ .pricing-table {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+ .pricing-card {
+    background-color:#831616;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+}
 
 /* add responsiveness for smaller screens */
 @media (max-width: 600px) {
