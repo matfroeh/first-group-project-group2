@@ -12,7 +12,18 @@
   padding: 0;
 }
 
-/* styles for body elements*/
+.video {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #831616;
+}
+
+.video-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #cd7979;
+    height: 300px;
+}
 
 
 /* add responsiveness for smaller screens */
