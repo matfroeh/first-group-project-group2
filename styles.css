@@ -34,7 +34,7 @@
 .nav-left {
   padding: 0.2rem 0.8rem;
   margin: 0.8rem;
-  background-color: white;
+  background-color: var(--text-color);
   align-items: center;
 }
 
@@ -47,7 +47,7 @@
 .nav-item {
   padding: 0.2rem 0.8rem;
   margin: 0.8rem;
-  background-color: white;
+  background-color: var(--text-color);
 }
 
 .nav-item a,
