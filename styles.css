@@ -4,7 +4,7 @@
   --first-bg-color: black;
   --second-bg-color: #0047ab;
   --text-color: white;
-  /* --main-font: ;*/
+  /* --main-font: ; */
 }
 * {
   box-sizing: border-box;
@@ -25,6 +25,34 @@
     height: 300px;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--first-bg-color);
+}
+
+.nav-left {
+  padding: 0.2rem 0.8rem;
+  margin: 0.8rem;
+  background-color: white;
+  align-items: center;
+}
+
+.nav-right {
+  display: flex;
+  justify-content: end;
+  list-style: none;
+}
+
+.nav-item {
+  padding: 0.2rem 0.8rem;
+  margin: 0.8rem;
+  background-color: white;
+}
+
+.nav-item a, .nav-left a {
+  text-decoration: none;
+  color: var(--first-bg-color);
 
 /* add responsiveness for smaller screens */
 @media (max-width: 600px) {
