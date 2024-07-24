@@ -1,3 +1,12 @@
+/* initial settings */
+:root {
+  /* Variables to be used for all sections */
+  --first-bg-color: black;
+  --second-bg-color: #0047ab;
+  --text-color: white;
+  /* --main-font: ; */
+}
+
 /* General styles */
 body {
   margin: 0;
@@ -29,6 +38,10 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
+
+
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -143,6 +156,49 @@ nav ul li a {
   border: none;
   cursor: pointer;
   display: block;
+
+.video {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #831616;
+}
+
+.video-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #cd7979;
+  height: 300px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--first-bg-color);
+}
+
+.nav-left {
+  padding: 0.2rem 0.8rem;
+  margin: 0.8rem;
+  background-color: white;
+  align-items: center;
+}
+
+.nav-right {
+  display: flex;
+  justify-content: end;
+  list-style: none;
+}
+
+.nav-item {
+  padding: 0.2rem 0.8rem;
+  margin: 0.8rem;
+  background-color: white;
+}
+
+.nav-item a,
+.nav-left a {
+  text-decoration: none;
+  color: var(--first-bg-color);
 }
 
 .trusted-companies, .video-section, .features-section, .why-choose-us, .pricing {
