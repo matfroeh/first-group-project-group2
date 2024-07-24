@@ -14,31 +14,31 @@ body {
   background-color: #F4F4F4;
 }
 
-header {
+/* header {
   background-color: #333;
   color: #fff;
   padding: 10px 0;
-}
+} */
 
-nav {
+/* nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-}
+} */
 
-nav .logo {
+/* nav .logo {
   font-size: 24px;
   font-weight: bold;
-}
+} */
 
-nav ul {
+/* nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
-
+} */
 
 * {
   box-sizing: border-box;
@@ -46,15 +46,15 @@ nav ul {
   padding: 0;
 }
 
-nav ul li {
+/* nav ul li {
   display: inline;
-}
+} */
 
-nav ul li a {
+/* nav ul li a {
   color: #fff;
   text-decoration: none;
   font-size: 16px;
-}
+} */
 
 .section-container {
   display: flex;
@@ -87,7 +87,7 @@ nav ul li a {
   border-radius: 47px;
 }
 
-.header {
+/* .header {
   width: 100%;
   max-width: 355px;
   height: auto;
@@ -101,7 +101,7 @@ nav ul li a {
   line-height: 21px;
   color: #000000;
   box-sizing: border-box;
-}
+} */
 
 .content {
   font-size: 24px;
@@ -156,17 +156,18 @@ nav ul li a {
   border: none;
   cursor: pointer;
   display: block;
+}
 
 .video {
   text-align: center;
   padding: 40px 20px;
-  background-color: #831616;
+  background-color: var(--second-bg-color);
 }
 
 .video-wrapper {
   width: 80%;
   margin: 0 auto;
-  background-color: #cd7979;
+  background-color: var(--first-bg-color);
   height: 300px;
 }
 
@@ -201,6 +202,7 @@ nav ul li a {
   color: var(--first-bg-color);
 }
 .pricing {
+    background-color: var(--first-bg-color);
     text-align: center;
     padding: 40px 20px;
 }
@@ -213,7 +215,7 @@ nav ul li a {
 }
 
  .pricing-card {
-    background-color:#831616;
+    background-color: var(--second-bg-color);
     padding: 20px;
     border-radius: 8px;
     width: 200px;
