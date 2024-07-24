@@ -1,0 +1,20 @@
+/* initial settings */
+:root {
+  /* Variables to be used for all sections */
+  --first-bg-color: black;
+  --second-bg-color: #0047ab;
+  --text-color: white;
+  /* --main-font: ;*/
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* styles for body elements*/
+
+
+/* add responsiveness for smaller screens */
+@media (max-width: 600px) {
+}
