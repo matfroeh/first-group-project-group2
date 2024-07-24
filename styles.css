@@ -10,8 +10,8 @@
 /* General styles */
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
-  background-color: #F4F4F4;
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f4f4;
 }
 
 /* header {
@@ -62,11 +62,12 @@ body {
   align-items: center;
   flex-wrap: wrap;
   padding: 20px;
-  background: #C4C4C4;
+  background: #c4c4c4;
 }
 
-.rectangle3, .rectangle4 {
-  background: linear-gradient(0deg, #EDEDED, #EDEDED);
+.rectangle3,
+.rectangle4 {
+  background: linear-gradient(0deg, #ededed, #ededed);
   box-sizing: border-box;
   padding: 20px;
   margin: 10px;
@@ -120,7 +121,7 @@ body {
   max-width: 195px;
   height: 51px;
   margin: 20px auto 0;
-  background: #FFFFFF;
+  background: #ffffff;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
@@ -148,7 +149,7 @@ body {
   max-width: 195px;
   height: 51px;
   margin: 20px auto 0;
-  background: #FFFFFF;
+  background: #ffffff;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
@@ -202,46 +203,60 @@ body {
   color: var(--first-bg-color);
 }
 .pricing {
-    background-color: var(--first-bg-color);
-    text-align: center;
-    padding: 40px 20px;
-}
-
- .pricing-table {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
- .pricing-card {
-    background-color: var(--second-bg-color);
-    padding: 20px;
-    border-radius: 8px;
-    width: 200px;
-}
-
-.trusted-companies, .video-section, .features-section, .why-choose-us, .pricing {
-  padding: 40px 20px;
+  background-color: var(--first-bg-color);
   text-align: center;
+  padding: 40px 20px;
 }
 
-.trusted-companies h2, .video-section h2, .features-section h2, .why-choose-us h2, .pricing h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.company-logos, .features, .reasons, .pricing-options {
+.pricing-table {
   display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
 }
 
-.logo-placeholder, .icon-placeholder, .video-placeholder, .price-card {
+.pricing-card {
+  background-color: var(--second-bg-color);
+  padding: 20px;
+  border-radius: 8px;
+  width: 200px;
+}
+
+.trusted-companies,
+.video-section,
+.features-section,
+.why-choose-us,
+.pricing {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.trusted-companies h2,
+.video-section h2,
+.features-section h2,
+.why-choose-us h2,
+.pricing h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.company-logos,
+.features,
+.reasons,
+.pricing-options {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.logo-placeholder,
+.icon-placeholder,
+.video-placeholder,
+.price-card {
   width: 100px;
   height: 100px;
-  background: #DDD;
+  background: #ddd;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -256,8 +271,8 @@ body {
 .price-card {
   width: 150px;
   height: 150px;
-  background: #FFF;
-  border: 1px solid #DDD;
+  background: #fff;
+  border: 1px solid #ddd;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -281,7 +296,8 @@ body {
   font-weight: bold;
 }
 
-.footer-nav, .social-links {
+.footer-nav,
+.social-links {
   list-style: none;
   display: flex;
   gap: 10px;
@@ -289,11 +305,13 @@ body {
   padding: 0;
 }
 
-.footer-nav li, .social-links li {
+.footer-nav li,
+.social-links li {
   display: inline;
 }
 
-.footer-nav li a, .social-links li a {
+.footer-nav li a,
+.social-links li a {
   color: #fff;
   text-decoration: none;
   font-size: 16px;
