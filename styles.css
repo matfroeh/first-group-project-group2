@@ -1,44 +1,18 @@
 /* initial settings */
 :root {
   /* Variables to be used for all sections */
-  --first-bg-color: black;
-  --second-bg-color: #0047ab;
+  --first-bg-color: #1a1a1a; /* Dark color for a grounded feel */
   --text-color: white;
-  /* --main-font: ; */
+  --hover-color: #ff6a00;
+  --font-family: "Roboto", sans-serif;
 }
 
 /* General styles */
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-family);
   background-color: #f4f4f4;
 }
-
-/* header {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 0;
-} */
-
-/* nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-} */
-
-/* nav .logo {
-  font-size: 24px;
-  font-weight: bold;
-} */
-
-/* nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-} */
 
 * {
   box-sizing: border-box;
@@ -46,6 +20,48 @@ body {
   padding: 0;
 }
 
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: var(--first-bg-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+.nav-left .nav-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.nav-left .logo-image {
+  width: 150px; /* Adjust the width as needed */
+  height: auto;
+}
+
+.nav-right {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-item {
+  display: inline;
+}
+
+.nav-item a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+  color: var(--hover-color);
+}
 /* nav ul li {
   display: inline;
 } */
@@ -190,17 +206,47 @@ body {
     height: 45px;
   }
 }
+
+/*Video section here*/
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .video {
   text-align: center;
   padding: 40px 20px;
-  background-color: var(--second-bg-color);
+  background: linear-gradient(270deg, #6a11cb, #2575fc, #ff6a00, #ee0979);
+  background-size: 800% 800%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+.video h2 {
+  color: #fff;
+  margin-bottom: 20px;
 }
 
 .video-wrapper {
-  width: 80%;
+  width: 100%;
+  max-width: 800px;
   margin: 0 auto;
   background-color: var(--first-bg-color);
-  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .navbar {
@@ -218,7 +264,7 @@ body {
 
 .nav-right {
   display: flex;
-  justify-content: end;
+  justify-content: center;
   list-style: none;
 }
 
@@ -230,11 +276,13 @@ body {
 
 .nav-item a,
 .nav-left a {
-  text-decoration: none;
+  text-decoration: saddlebrown;
   color: var(--first-bg-color);
 }
+
+/*Pricing section */
 .pricing {
-  background-color: var(--first-bg-color);
+  background-color: rgb(227, 227, 251);
   text-align: center;
   padding: 40px 20px;
 }
@@ -247,52 +295,30 @@ body {
 }
 
 .pricing-card {
-  background-color: var(--second-bg-color);
+  background-color: black;
   padding: 20px;
   border-radius: 8px;
   width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.trusted-companies,
-.video-section,
-.features-section,
-.why-choose-us,
-.pricing {
-  padding: 40px 20px;
-  text-align: center;
+.pricing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.trusted-companies h2,
-.video-section h2,
-.features-section h2,
-.why-choose-us h2,
-.pricing h2 {
+.pricing-card h3 {
   font-size: 24px;
-  margin-bottom: 20px;
+  color: var(--text-color);
+  margin-bottom: 10px;
 }
 
-.company-logos,
-.features,
-.reasons,
-.pricing-options {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+.pricing-card p {
+  font-size: 16px;
+  color: var(--text-color);
 }
 
-.logo-placeholder,
-.icon-placeholder,
-.video-placeholder,
-.price-card {
-  width: 100px;
-  height: 100px;
-  background: #ddd;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 10px;
-}
 
 .video-placeholder {
   width: 560px;
@@ -375,6 +401,7 @@ body {
   line-height: 1.6;
   color: #555;
 }
+/*   Footer section */
 .footer-content {
   max-width: 1200px;
   margin: 0 auto;
@@ -382,13 +409,18 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
+  background-color: #050519;
   color: #fff;
 }
 
 .footer-logo {
-  font-size: 24px;
-  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo-image {
+  width: 150px; /* Adjust the width as needed */
+  height: auto;
 }
 
 .footer-nav,
