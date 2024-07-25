@@ -54,7 +54,7 @@ body {
 
 .nav-item a {
   color: var(--text-color);
-  text-decoration: none;
+  text-decoration: solid;
   font-size: 20px;
   transition: color 0.3s ease;
 }
@@ -279,37 +279,61 @@ body {
   text-decoration: saddlebrown;
   color: var(--first-bg-color);
 }
+/* Feature section*/
+.features {
+  padding: 60px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
 
+.features h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #333;
+  font-weight: 700;
+}
 
+.features-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: calc(50% - 15px);
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .feature-card {
+    width: 100%;
+  }
+}
 /*Pricing section */
 .pricing {
-  background-color: rgb(227, 227, 251);}
-
-.features , h2 {
-text-align: center;
-padding: 40px 20px;
-
+  background-color: rgb(227, 227, 251);
+  text-align: center;
+  padding: 40px 20px;
 }
-.features-list {
-  background-color:  var(--second-bg-color); 
-display: flex;
-justify-content: center;
-gap: 20px;
-flex-wrap: wrap;
-   align-items: center;
-  font-size: 24px;
-  font-weight: bold;
-  border-radius: 20px;
-    width: 600px;
-
-}
-.features-card {
-  padding: 20px;
-  border-radius: 8px;
-  width: 200px;
- 
-}
-
 
 .pricing-table {
   display: flex;
@@ -321,7 +345,7 @@ flex-wrap: wrap;
 .pricing-card {
   background-color: black;
   padding: 20px;
-  border-radius: 20px;
+  border-radius: 8px;
   width: 200px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
