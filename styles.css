@@ -202,6 +202,25 @@ body {
   text-decoration: none;
   color: var(--first-bg-color);
 }
+.features , h2 {
+text-align: center;
+padding: 40px 20px;
+
+}
+.features-list {
+  background-color:  var(--second-bg-color); 
+display: flex;
+justify-content: center;
+gap: 20px;
+flex-wrap: wrap;
+
+}
+.features-card {
+  padding: 20px;
+  border-radius: 8px;
+  width: 200px;
+ 
+}
 .pricing {
   background-color: var(--first-bg-color);
   text-align: center;
