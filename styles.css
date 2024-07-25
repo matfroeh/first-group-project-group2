@@ -242,7 +242,7 @@ flex-wrap: wrap;
 .pricing-card {
   background-color: var(--second-bg-color);
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 20px;
   width: 200px;
 }
 
