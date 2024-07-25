@@ -280,12 +280,36 @@ body {
   color: var(--first-bg-color);
 }
 
+
 /*Pricing section */
 .pricing {
   background-color: rgb(227, 227, 251);
-  text-align: center;
-  padding: 40px 20px;
+
+.features , h2 {
+text-align: center;
+padding: 40px 20px;
+
 }
+.features-list {
+  background-color:  var(--second-bg-color); 
+display: flex;
+justify-content: center;
+gap: 20px;
+flex-wrap: wrap;
+   align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 20px;
+    width: 600px;
+
+}
+.features-card {
+  padding: 20px;
+  border-radius: 8px;
+  width: 200px;
+ 
+}
+
 
 .pricing-table {
   display: flex;
@@ -297,7 +321,7 @@ body {
 .pricing-card {
   background-color: black;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 20px;
   width: 200px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
